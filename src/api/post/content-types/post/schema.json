@@ -14,7 +14,8 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 70
     },
     "created": {
       "type": "datetime",
@@ -28,15 +29,6 @@
         "images"
       ]
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title",
-      "required": true
-    },
-    "author": {
-      "type": "string",
-      "required": true
-    },
     "uuid": {
       "type": "customField",
       "options": {
@@ -46,11 +38,20 @@
     },
     "content": {
       "type": "text",
+      "required": true,
+      "minLength": 50
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "author": {
+      "type": "string",
       "required": true
     },
     "comment": {
-      "type": "text",
-      "required": false
+      "type": "text"
     }
   }
 }
