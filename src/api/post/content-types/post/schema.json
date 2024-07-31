@@ -36,11 +36,6 @@
       },
       "customField": "plugin::strapi-advanced-uuid.uuid"
     },
-    "content": {
-      "type": "text",
-      "required": true,
-      "minLength": 50
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -50,8 +45,9 @@
       "type": "string",
       "required": true
     },
-    "comment": {
-      "type": "text"
+    "content": {
+      "type": "blocks",
+      "required": true
     }
   }
 }
