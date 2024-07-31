@@ -380,7 +380,7 @@ export interface ApiPostPost extends Schema.CollectionType {
         maxLength: 70;
       }>;
     created: Attribute.DateTime & Attribute.Required;
-    image: Attribute.Media & Attribute.Required;
+    image: Attribute.Media<'images'> & Attribute.Required;
     uuid: Attribute.UID<
       undefined,
       undefined,
